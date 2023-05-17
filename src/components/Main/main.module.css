@@ -1,0 +1,86 @@
+.main {
+  background-color: var(--very-dark-blue);
+  overflow: hidden;
+  padding: 1rem;
+  flex: 1;
+  color: var(--light-grayish-blue);
+  margin-inline: auto;
+  width: 100%;
+}
+.mainWrapper {
+  width: 100%;
+  position: relative;
+  max-width: 500px;
+  margin-inline: auto;
+  height: 100%;
+}
+.desc {
+  font-weight: 600;
+  text-align: center;
+  padding: 1rem 0;
+  font-size: 1.5rem;
+  margin-inline: auto;
+  display: flex;
+  justify-content: center;
+  width: 100%;
+}
+.form {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+  margin: 1.5rem 0;
+  width: 100%;
+}
+.inputControl {
+}
+.input {
+  width: 100%;
+  padding: 1rem 0.8rem;
+  font-size: 1.6rem;
+  border: none;
+  outline: none;
+}
+.label {
+  font-size: 1.6rem;
+  text-decoration: underline;
+  padding-bottom: 0.6rem;
+  /* color: red; */
+  display: inline-block;
+}
+
+.upload {
+  position: absolute;
+  right: 1rem;
+  bottom: 1rem;
+  padding: 1.5rem;
+  background-color: grey;
+  border-radius: 0.4rem;
+  font-size: 1.3rem;
+  font-weight: bold;
+  font-size: 1.3rem;
+  cursor: pointer;
+}
+.convertWrapper {
+  position: absolute;
+  bottom: 1rem;
+  color: var(--light-grayish-blue);
+}
+.convertBtn {
+  color: var(--light-grayish-blue);
+  padding: 1.5rem;
+  font-weight: bold;
+  cursor: pointer;
+  background-color: grey;
+  font-size: 1.3rem;
+  outline: none;
+  border: none;
+  border-radius: 0.4rem;
+  color: var(--light-grayish-blue);
+}
+
+@media screen and (min-width: 600px) {
+  .form {
+    flex-direction: row;
+    justify-content: space-between;
+  }
+}
