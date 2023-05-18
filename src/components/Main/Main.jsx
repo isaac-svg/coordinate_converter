@@ -42,9 +42,7 @@ const Main = () => {
   return (
     <div className={classes.main}>
       <div className={classes.mainWrapper}>
-        <span className={classes.desc}>
-          CONVERT WGS TO LEIGON AND VICE VERSA
-        </span>
+        <span className={classes.desc}>COORDINATES CONVETER</span>
 
         <form className={classes.form} onSubmit={convert}>
           <div className={classes.choose}>
@@ -90,12 +88,12 @@ const Main = () => {
               <span className={classes.display}>
                 {idx == 0 ? (
                   <>
-                    LAT:
+                    {type === "WGS to LEIGON" ? "NORTHING" : "LAT"}
                     <p>{num}</p> <br />
                   </>
                 ) : (
                   <>
-                    LONG:
+                    {type === "WGS to LEIGON" ? "EASTING" : "LONG"}
                     <p>{num}</p> <br />
                   </>
                 )}
