@@ -28,10 +28,32 @@
   display: flex;
   flex-direction: column;
   gap: 2rem;
-  margin: 1.5rem 0;
+  margin: 1.5rem auto;
+  width: 90%;
+  align-items: center;
+}
+.choose {
+  /* margin-inline: auto; */
   width: 100%;
+  display: flex;
+  /* flex-direction: column; */
+  align-items: center;
+  justify-content: space-between;
+  margin: 0 auto;
+  gap: 1rem;
+}
+.text {
+  font-size: 1.4rem;
+}
+.select {
+  -webkit-appearance: none;
+  appearance: none;
+  border: none;
+  outline: none;
+  padding: 1rem 2rem;
 }
 .inputControl {
+  width: 100%;
 }
 .input {
   width: 100%;
@@ -47,22 +69,12 @@
   /* color: red; */
   display: inline-block;
 }
-
-.upload {
-  position: absolute;
-  right: 1rem;
-  bottom: 1rem;
-  padding: 1.5rem;
-  background-color: grey;
-  border-radius: 0.4rem;
-  font-size: 1.3rem;
-  font-weight: bold;
-  font-size: 1.3rem;
-  cursor: pointer;
+.action {
+  display: flex;
 }
 .convertWrapper {
-  position: absolute;
-  bottom: 1rem;
+  /* position: absolute; */
+  /* bottom: 1rem; */
   color: var(--light-grayish-blue);
 }
 .convertBtn {
@@ -77,10 +89,27 @@
   border-radius: 0.4rem;
   color: var(--light-grayish-blue);
 }
+.resultWrapper {
+  width: 90%;
+  display: flex;
+  justify-content: center;
+  background: hsl(192, 100%, 67%);
+  margin-inline: auto;
+}
+.display {
+  width: 60%;
+  margin-inline: auto;
+  text-align: center;
+  margin-block: auto;
+  background-color: white;
+  color: var(--very-dark-desaturated-blue);
+  padding: 2rem;
+  font-size: 1.5rem;
+}
 
 @media screen and (min-width: 600px) {
   .form {
-    flex-direction: row;
+    flex-direction: column;
     justify-content: space-between;
   }
 }
